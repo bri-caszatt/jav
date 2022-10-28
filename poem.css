@@ -1,0 +1,29 @@
+body {
+    background-color: aquamarine;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+}
+
+h1 {
+    font-size: 60px;
+    color: black;
+}
+
+.container {
+    overflow: hidden;
+    position: relative;
+    font-size: 28px;
+}
+
+.backgroundPic {
+    opacity: 0.3;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+}
+
+.content {
+    position: relative;
+}
