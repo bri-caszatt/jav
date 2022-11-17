@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Chapter 13</title>
+    <link rel="stylesheet" href="chapter13.css">
+  </head>
+  <body>
+    <div class="rectangle">
+        <p>I am a rectangle.</p>
+    </div>
+    <button onclick="scrollToTop()">
+        Click to scroll to top
+    </button>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript"> //Check if the user has pressed the enter key on the keyboard.
+        $(document).keypress(function(event){
+            
+            let keycode = (event.keyCode ? event.keyCode : event.which);
+            if(keycode == '13'){
+                alert('You pressed the "enter" key.');	
+            }  
+        });
+    </script>
+    <script> //Add a hover event to an element.
+        $("div").hover( 
+            function() {
+             $( this ).append( $( "<span> You're hovering!</span>" ) );
+             }, function() {
+             $( this ).find( "span" ).last().remove();
+             }
+        );
+    </script>
+    <script> //Scroll to the top of the page if the user clicks a button.
+        function scrollToTop() {
+            $(window).scrollTop(0);
+        };
+    </script>
+  </body>
+</html>

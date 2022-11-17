@@ -1,0 +1,11 @@
+/*Give the rectangle a width, height, and background color.*/
+.rectangle {
+    width: 50%;
+    height: 700px;
+    background-color: cyan;
+    border: 10px solid black; /*Give the box a thick border.*/
+    margin: auto; /*Center the rectangle on the page.*/
+    text-align: center; /*Center the "I am a rectangle" text within the rectangle.*/
+    padding: 300px 0px;
+    box-shadow: 20px 20px 10px gray; /*Add a drop shadow to the rectangle*/
+};
